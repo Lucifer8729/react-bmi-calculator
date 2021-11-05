@@ -13,18 +13,21 @@ const UserInput = (props) => {
   const [alignment, setAlignment] = React.useState(tab1);
 
   const handleAlignment = (event, newAlignment) => {
-    setAlignment(newAlignment);
-    handleUnitChange(newAlignment);
+    if (newAlignment !== null) {
+      setAlignment(newAlignment);
+      handleUnitChange(newAlignment);
+    }
   };
 
   return (
     <>
-      <Typography variant="h6" sx={{ mb: 1 }}>
+      <Typography variant="subtitle1" sx={{ mb: 1 }}>
         Enter your {type} :
       </Typography>
       <TextField
         label={label}
         variant="outlined"
+        color="success"
         sx={{ mb: 1 }}
         value={value}
         type="number"
