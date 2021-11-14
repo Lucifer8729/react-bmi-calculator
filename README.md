@@ -1,5 +1,5 @@
 <div align="center">
-  <h3 align="center">Emojipedia</h3>
+  <h3 align="center">Simple BMI Calculator</h3>
   <p align="center">
     A simple BMI calculator app
     <br />
